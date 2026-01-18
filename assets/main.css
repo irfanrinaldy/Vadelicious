@@ -94,6 +94,15 @@ form {
     
 }
 
+.products-form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 64px;
+}
+
 footer {
     color: #ff6f91;
     padding: 16px 32px;

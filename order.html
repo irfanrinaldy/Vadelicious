@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/vadelicious copy.jpg" alt="vadelicious-logo" width="135" height="100">
+            </a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="order.html">Order</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </div>
+                <div class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" aria-label="Search"/>
+                        <button title="search" class="btn btn-outline-light" type="submit"><img src="/assets/search.svg" width="25" height="25" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <form action="/order" method="post" class="products-form">
+        <h2 class="text-center">
+            <div class="ourMenu"></div>
+            Order Here
+        </h2>
+
+        <br>
+
+        <label for="softcookies"><b>Soft Cookies</b></label>
+        <table>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="softcookies" id="softcookies" value="chocheez">Chocheez</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="softcookies" id="softcookies" value="blackpeanutbutter">Black Peanut Butter</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="softcookies" id="softcookies" value="doublechoco">Double Choco</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+        </table>
+            
+        <br>
+
+        <label for="browkies"><b>Browkies</b></label>
+        <table>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="chocheez" id="browkies" value="chocheez">Chocheez</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="blackpeanutbutter" id="browkies" value="blackpeanutbutter">Black Peanut Butter</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="doublechoco" id="browkies" value="doublechoco">Double Choco</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+        </table>
+        
+        <br>
+
+        <label for="crunchycookies"><b>Crunchy Cookies</b></label>
+        <table>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="chocheez" id="crunchycookies" value="chocheez">Chocheez</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="blackpeanutbutter" id="crunchycookies" value="blackpeanutbutter">Black Peanut Butter</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <td><input type="checkbox" name="doublechoco" id="crunchycookies" value="doublechoco">Double Choco</td>
+                    <td><label for="quantity">Jumlah</label></td>
+                    <td><input type="number" name="quantity" id="quantity" min="1" max="100"></td>
+                </div>
+            </tr>
+        </table>
+        
+        <br>
+
+        <div>
+            <div>
+                <label for="address">Alamat Pengiriman</label>
+            </div>
+        <textarea name="address" id="address" cols="45" rows="5"></textarea>
+        </div>
+        
+        <br>
+
+        <label for="contact">Nomor Kontak</label>
+        <input type="text" name="contact" id="contact" placeholder="Nomor HP/WA Anda">
+
+        <br>
+
+        <button type="submit" class="btn btn-primary btn-lg text-center">Order</button>
+    </form>
+
+    <footer>
+       <div>
+            <h2>Vadelicious</h2>
+            <p>&copy; 2024 Vadelicious Cookies & Desserts. All rights reserved.</p>
+        </div>
+        <div id="footer-socials">
+            <img src="assets/whatsapp.svg" alt="WhatsApp Vadelicious">
+            <img src="assets/instagram.svg" alt="Instagram Vadelicious">
+            <img src="assets/facebook.svg" alt="Facebook Vadelicious">
+        </div>
+    </footer>
+</body>
+</html>
