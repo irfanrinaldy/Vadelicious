@@ -56,6 +56,12 @@ p {
     color: #555;
 }
 
+.lead {
+    line-height: 2.0;
+    font-weight: 350;
+    color: #666;
+}
+
 #header-section, #about-section, #contact-section {
     display: flex;
     justify-content: space-between;
@@ -144,25 +150,76 @@ footer p {
     width: 100%;
 }
 
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Rasio 16:9 untuk aspek rasio */
+    width: 100%;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
 #input-message {
     grid-area: message;
 }
+
+
 @media (max-width: 576px) {
-    h1 {
+    #header-text h1 {
         font-size: 1.5rem;
     }
 
-    p {
+    #about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #contact h1 {
+        font-size: 1.5rem;
+    }
+
+    #header-text p {
+        font-size: 1rem;
+    }
+
+    #about-text p {
+        font-size: 1rem;
+    }
+
+    #contact p {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    h1 {
+    #header-text h1 {
         font-size: 2.5rem;
     }
 
-    p {
+    #about-text h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact h1 {
+        font-size: 2.5rem;
+    }
+
+    #header-text p {
+        font-size: 1.5rem;
+    }
+
+    #about-text p {
+        font-size: 1.5rem;
+    }
+
+    #contact p {
         font-size: 1.5rem;
     }
 }
