@@ -128,8 +128,9 @@ footer p {
     font-weight: 500;
 }
 
-#footer-socials img {
+.footer-socials img {
     text-decoration: none;
+    display: inline-flex;
     width: 35px;
     height: 35px;
     margin-left: 35px;
