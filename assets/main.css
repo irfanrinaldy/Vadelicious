@@ -10,7 +10,7 @@ html, body {
 #navbar {
     background-color: #fdd6d7;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: auto;
     position: sticky;
     top: 0;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
@@ -42,13 +42,13 @@ html, body {
 
 h1 {
     font-size: 3.5rem;
-    font-weight: 800;
+    font-weight: auto;
     color: #333;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: auto;
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 
 .lead {
     line-height: 2.0;
-    font-weight: 350;
+    font-weight: auto;
     color: #666;
 }
 
@@ -125,7 +125,7 @@ footer {
 
 footer p {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: auto;
 }
 
 .footer-socials img {
@@ -140,7 +140,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: auto;
     column-gap: 32px;
     margin-top: 32px;
     grid-template-areas:    "name subject"
