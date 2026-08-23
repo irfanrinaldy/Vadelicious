@@ -205,7 +205,8 @@ footer p {
     }
 
     .d-flex {
-        margin-right: 100px;
+        align-items: center;
+        padding: 20px;
     }
 }
 
